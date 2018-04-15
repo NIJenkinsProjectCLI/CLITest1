@@ -1,4 +1,3 @@
 node {
-    bat 'LabVIEWCLI -OperationName RunUnitTests -ProjectPath "C:\\Users\\Aaron\\Desktop\\Jenkins Tests\\CLI Test Project.lvproj" -JUnitReportPath "C:\\Users\\Aaron\\Desktop\\Jenkins Tests\\UTF Output.xml"'
- 
+    bat 'LabVIEWCLI -OperationName RunVI -VIPath "C:\Users\Aaron\Desktop\Jenkins Tests\CLITest1-master\Run VI Test Alyssa.vi"'
 }
