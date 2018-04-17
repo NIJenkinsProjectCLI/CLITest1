@@ -1,3 +1,3 @@
 node {
-    bat 'LabVIEWCLI -OperationName CloseLabVIEW'
+    bat 'LabVIEWCLI -OperationName ExecuteBuildSpec -ProjectPath "C:\Users\Aaron\Desktop\Jenkins Tests\CLITest1-master"'
 }
