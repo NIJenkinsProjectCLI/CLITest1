@@ -1,3 +1,3 @@
 node {
-    bat 'LabVIEWCLI -OperationName ExecuteBuildSpec -ProjectPath "C:\Users\Aaron\Desktop\Jenkins Tests\CLITest1-master"'
+    bat 'start cmd.exe /c C:\Users\Aaron\Desktop\Jenkins Project\testbatch.bat'
 }
