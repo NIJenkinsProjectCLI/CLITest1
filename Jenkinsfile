@@ -8,4 +8,3 @@ echo Press ENTER to exit
 pause
 LabVIEWCLI -OperationName CloseLabVIEW'''
 }
-
