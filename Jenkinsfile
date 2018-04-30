@@ -1,4 +1,5 @@
 node{
+ git url: "https://github.com/NIJenkinsProjectCLI/CLITest1", branch: "master"
  bat '''echo Pizza
 LabVIEWCLI -OperationName MassCompile -DirectoryToCompile "C:\\Users\\Aaron\\Desktop\\Jenkins Tests\\CLITest1-master"
 LabVIEWCLI -OperationName RunUnitTests -ProjectPath "C:\\Users\\Aaron\\Desktop\\Jenkins Tests\\CLI Test Project.lvproj" -JUnitReportPath "C:\\Users\\Aaron\\Desktop\\Jenkins Tests\\UTF Output.xml"
