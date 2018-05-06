@@ -12,7 +12,7 @@ node{
        bat 'LabVIEWCLI -OperationName RunUnitTests -ProjectPath \"C:\\Users\\Aaron\\Desktop\\Jenkins Project\\workspace\\sProjectCLI_CLITest1_master-MZ36JFLZGKJ4ACFPZWKCUWIVS7AQXG3FOPB7P2U7VEFXNUF5XLVQ\\Jenkins Tests\\CLI Test Project.lvproj" -JUnitReportPath \"C:\\Users\\Aaron\\Desktop\\Jenkins Project\\workspace\\sProjectCLI_CLITest1_master-MZ36JFLZGKJ4ACFPZWKCUWIVS7AQXG3FOPB7P2U7VEFXNUF5XLVQ\\Jenkins Tests\\UTF Output.xml"'
  }
  stage('Run_VI_Analyzer') {
-  //Run VI Analyzer
+       bat 'LabVIEWCLI -OperationName RunVIAnalyzer -ConfigPath \"C:\\Users\\Aaron\\Desktop\\Jenkins Project\\workspace\\sProjectCLI_CLITest1_master-MZ36JFLZGKJ4ACFPZWKCUWIVS7AQXG3FOPB7P2U7VEFXNUF5XLVQ\\VIAnalyzerConfigFile.viancfg" -ReportPath \"C:\\Users\\Aaron\\Desktop\\Jenkins Project\\workspace\\sProjectCLI_CLITest1_master-MZ36JFLZGKJ4ACFPZWKCUWIVS7AQXG3FOPB7P2U7VEFXNUF5XLVQ\\Run VI Analyzer Results.txt"'
  }
  stage('Execute_Build_Spec'){
   //build spec
