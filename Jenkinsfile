@@ -18,4 +18,10 @@ node{
        bat 'LabVIEWCLI -OperationName ExecuteBuildSpec -ProjectPath \"C:\\Users\\Aaron\\Desktop\\Jenkins Project\\workspace\\sProjectCLI_CLITest1_master-MZ36JFLZGKJ4ACFPZWKCUWIVS7AQXG3FOPB7P2U7VEFXNUF5XLVQ\\Jenkins Tests\\CLITest1-master\\TestingBuildSpec.lvproj" '
   //include release version?
  }
+ //stage('Create New Release'){
+ //      bat 
+ //}
+ //stage('Close LabVIEW'){
+ //      bat
+ //}
 }
