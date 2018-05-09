@@ -24,7 +24,7 @@ node{
  //stage('Create New Release'){
  //      bat 
  //}
- //stage('Close LabVIEW'){
- //      bat
- //}
+ stage('Close LabVIEW'){
+       bat 'LabVIEWCLI -OperationName CloseLabVIEW '
+ }
 }
