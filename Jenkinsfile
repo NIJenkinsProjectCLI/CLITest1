@@ -18,9 +18,9 @@ node{
        bat 'LabVIEWCLI -OperationName ExecuteBuildSpec -ProjectPath \"C:\\Users\\Aaron\\Desktop\\Jenkins Project\\Build exe.lvproj" '
   //include release version?
  }
- stage('Run EXE'){
-       bat 'START C:\\Users\\Aaron\\Desktop\\builds\\"Build exe"\\"Test lahnbvglidfnb"\\"Test ACD Application.exe"'
- }
+ //stage('Run EXE'){
+ //      bat 'START C:\\Users\\Aaron\\Desktop\\builds\\"Build exe"\\"Test lahnbvglidfnb"\\"Test ACD Application.exe"'
+// }
  //stage('Create New Release'){
  //      bat 
  //}
