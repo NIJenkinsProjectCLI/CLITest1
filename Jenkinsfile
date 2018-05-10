@@ -21,7 +21,7 @@ node{
  //      bat 'START C:\\Users\\Aaron\\Desktop\\builds\\"Build exe"\\"Test lahnbvglidfnb"\\"Test ACD Application.exe"'
 // }
  stage('Create New Release'){
-      bat 'cd .. && cd .. && cd .. && cd .. && github-release\\github-release.exe release --security-token dfd0c5807607cb048f1eba2cc693e61e0061e623 --user "NIJenkinsProjectCLI" --repo "CLITest1" --tag "v2.0" --name "Testing Release 5/10/2018"'
+      bat 'cd ..   && cd ..   && cd ..   && cd ..   && C:\\github-release\\github-release.exe release --security-token dfd0c5807607cb048f1eba2cc693e61e0061e623 --user "NIJenkinsProjectCLI" --repo "CLITest1" --tag "v2.0" --name "Testing Release 5/10/2018"'
  }
  //stage('Close LabVIEW'){
   //     bat 'LabVIEWCLI -OperationName CloseLabVIEW '
