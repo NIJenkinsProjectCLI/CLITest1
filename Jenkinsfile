@@ -16,14 +16,13 @@ node{
  }
  stage('Execute_Build_Spec'){
        bat 'LabVIEWCLI -OperationName ExecuteBuildSpec -ProjectPath \"C:\\Users\\Aaron\\Desktop\\Jenkins Project\\Build exe.lvproj" '
-  //include release version?
  }
  //stage('Run EXE'){
  //      bat 'START C:\\Users\\Aaron\\Desktop\\builds\\"Build exe"\\"Test lahnbvglidfnb"\\"Test ACD Application.exe"'
 // }
- //stage('Create New Release'){
- //      bat 
- //}
+ stage('Create New Release'){
+       bat 'cd \\ && cd windows/system32 && C:\\github-release\\github-release.exe release --user "NIJenkinsProjectCLI" --repo "CLITest1" --tag "v2.0" --name "Release 5/10/18"'
+ }
  stage('Close LabVIEW'){
        bat 'LabVIEWCLI -OperationName CloseLabVIEW '
  }
