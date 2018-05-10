@@ -14,14 +14,17 @@ node{
   //stage('RunVI') {
     //   bat 'LabVIEWCLI -OperationName RunVI -VIPath \"C:\\Users\\Aaron\\Desktop\\Jenkins Project\\workspace\\sProjectCLI_CLITest1_master-MZ36JFLZGKJ4ACFPZWKCUWIVS7AQXG3FOPB7P2U7VEFXNUF5XLVQ\\Run VI Test.vi" 8 5672'
  //}
- //stage('Execute_Build_Spec'){
-   //    bat 'LabVIEWCLI -OperationName ExecuteBuildSpec -ProjectPath \"C:\\Users\\Aaron\\Desktop\\Jenkins Project\\Build exe.lvproj" '
- //}
+ stage('Execute_Build_Spec'){
+       bat 'LabVIEWCLI -OperationName ExecuteBuildSpec -ProjectPath \"C:\\Users\\Aaron\\Desktop\\Jenkins Project\\workspace\\sProjectCLI_CLITest1_master-MZ36JFLZGKJ4ACFPZWKCUWIVS7AQXG3FOPB7P2U7VEFXNUF5XLVQ\\Build exe.lvproj" '
+ }
  //stage('Run EXE'){
  //      bat 'START C:\\Users\\Aaron\\Desktop\\builds\\"Build exe"\\"Test lahnbvglidfnb"\\"Test ACD Application.exe"'
 // }
- stage('Create New Release'){
-      bat 'C:\\github-release\\github-release.exe release --user "NIJenkinsProjectCLI" --repo "CLITest1" --tag "v2.0"'
+ //stage('Create New Release'){
+  //    bat 'C:\\github-release\\github-release.exe release --user "NIJenkinsProjectCLI" --repo "CLITest1" --tag "v2.0"'
+ //}
+ stage('Add EXE to Release'){
+        bat 'C:\\github-release\\github-release.exe upload --user "NIJenkinsProjectCLI" --repo "CLITest1" --tag "v2.0" --name "Jenkins Build" --file "\C:\\Users\\Aaron\\Desktop\\Jenkins Project\\workspace\\sProjectCLI_CLITest1_master-MZ36JFLZGKJ4ACFPZWKCUWIVS7AQXG3FOPB7P2U7VEFXNUF5XLVQ\\builds\\Jenkins Build.exe"'
  }
  //stage('Close LabVIEW'){
   //     bat 'LabVIEWCLI -OperationName CloseLabVIEW '
