@@ -17,9 +17,6 @@ node{
  stage('Execute_Build_Spec'){
        bat 'LabVIEWCLI -OperationName ExecuteBuildSpec -ProjectPath \"C:\\Users\\Aaron\\Desktop\\Jenkins Project\\workspace\\sProjectCLI_CLITest1_master-MZ36JFLZGKJ4ACFPZWKCUWIVS7AQXG3FOPB7P2U7VEFXNUF5XLVQ\\Build exe.lvproj" '
  }
- stage('Run EXE'){
-       bat 'START C:\\Users\\Aaron\\Desktop\\builds\\"Build exe"\\"Test lahnbvglidfnb"\\"Test ACD Application.exe"'
- }
  stage('Create New Release'){
       bat 'C:\\github-release\\github-release.exe release --user "NIJenkinsProjectCLI" --repo "CLITest1" --tag "v2.2"'
  }
