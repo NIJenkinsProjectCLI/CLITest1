@@ -17,12 +17,12 @@ node{
  stage('Execute_Build_Spec'){
        bat 'LabVIEWCLI -OperationName ExecuteBuildSpec -ProjectPath \"C:\\Users\\Aaron\\Desktop\\Jenkins Project\\workspace\\sProjectCLI_CLITest1_master-MZ36JFLZGKJ4ACFPZWKCUWIVS7AQXG3FOPB7P2U7VEFXNUF5XLVQ\\Build exe.lvproj" '
  }
- stage('Create New Release'){
-      bat 'C:\\github-release\\github-release.exe release --user "NIJenkinsProjectCLI" --repo "CLITest1" --tag "v2.2"'
- }
- stage('Add EXE to Release'){
-        bat 'C:\\github-release\\github-release.exe upload --user "NIJenkinsProjectCLI" --repo "CLITest1" --tag "v2.2" --name "Waveform Application.exe" --file "C:\\Users\\Aaron\\Desktop\\Jenkins Project\\workspace\\sProjectCLI_CLITest1_master-MZ36JFLZGKJ4ACFPZWKCUWIVS7AQXG3FOPB7P2U7VEFXNUF5XLVQ\\builds\\Jenkins Build\\Waveform Application.exe"'
- }
+// stage('Create New Release'){
+  //    bat 'C:\\github-release\\github-release.exe release --user "NIJenkinsProjectCLI" --repo "CLITest1" --tag "v2.2"'
+// }
+ //stage('Add EXE to Release'){
+      //  bat 'C:\\github-release\\github-release.exe upload --user "NIJenkinsProjectCLI" --repo "CLITest1" --tag "v2.2" --name "Waveform Application.exe" --file "C:\\Users\\Aaron\\Desktop\\Jenkins Project\\workspace\\sProjectCLI_CLITest1_master-MZ36JFLZGKJ4ACFPZWKCUWIVS7AQXG3FOPB7P2U7VEFXNUF5XLVQ\\builds\\Jenkins Build\\Waveform Application.exe"'
+ //}
  stage('Close LabVIEW'){
        bat 'LabVIEWCLI -OperationName CloseLabVIEW '
  }
